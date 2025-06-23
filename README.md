@@ -527,7 +527,7 @@ CREATE TABLE IF NOT EXISTS public.vector_store (
 
 ### 6.2.执行测试后的结果
 
-![image1](assets\image1.png)
+![image1](https://github.com/lsqlister/spring-ai-alibaba-rag-pgvector-jdbc-postgres/blob/main/assets/image1.png?raw=true)
 
 ## 7.小结
 
