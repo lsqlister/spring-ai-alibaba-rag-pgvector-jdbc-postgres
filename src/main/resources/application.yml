@@ -1,0 +1,35 @@
+server:
+  port: 8088
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/rag_demo
+    username: postgres
+    password: postgres
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    defer-datasource-initialization: true  # 允许先创建扩展再初始化表
+  ai:
+    openai:
+      api-key: ${DASHSCOPE_API_KEY}
+      base-url: https://dashscope.aliyuncs.com/compatible-mode
+      chat:
+        options:
+          model: qwen-max
+      embedding:
+        options:
+          model: text-embedding-v1
+
+# 打印日志
+logging:
+  level:
+    com.example: DEBUG
+    #org.springframework.ai.reader.pdf: DEBUG
+    #org.springframework.jdbc.core.JdbcTemplate: DEBUG  # 显示 SQL 语句
+    #org.springframework.jdbc.core.StatementCreatorUtils: TRACE  # 显示参数绑定
