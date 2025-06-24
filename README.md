@@ -400,7 +400,7 @@ public class RagService {
 【来源】: (指出回答基于哪些上下文片段，用1,2,3编号)
 ```
 
-## 3. REST 接口
+### 3. 5.REST 接口
 
 ```java
 package com.chen.rag.controller;
@@ -527,7 +527,7 @@ CREATE TABLE IF NOT EXISTS public.vector_store (
 
 ### 6.2.执行测试后的结果
 
-![image1](https://github.com/lsqlister/spring-ai-alibaba-rag-pgvector-jdbc-postgres/blob/main/assets/image1.png?raw=true)
+![image1](https://raw.githubusercontent.com/lsqlister/spring-ai-alibaba-rag-pgvector-jdbc-postgres/refs/heads/main/assets/image1.png?raw=true)
 
 ## 7.小结
 
